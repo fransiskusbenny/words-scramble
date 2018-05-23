@@ -23,7 +23,6 @@ class CompetitionScrambleController extends Controller
         })->inRandomOrder()->first();
 
         $question = [
-            'word' => $word->word->text,
             'text' => $word->text,
             'hint' => $word->word->hint,
             'points' => $word->points * 2,

@@ -16,7 +16,6 @@ class ScramblesController extends Controller
         })->inRandomOrder()->first();
 
         return response([
-            'word' => $word->word->text,
             'text' => $word->text,
             'hint' => $word->word->hint,
             'points' => $word->points,
